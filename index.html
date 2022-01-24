@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+
+        <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico?ver=v9455" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/touch-icon-iphone.png?ver=v9455">
+    <link rel="apple-touch-icon" sizes="76x76" href="/touch-icon-ipad.png?ver=v9455">
+    <link rel="apple-touch-icon" sizes="120x120" href="/touch-icon-iphone-retina.png?ver=v9455">
+    <link rel="apple-touch-icon" sizes="152x152" href="/touch-icon-ipad-retina.png?ver=v9455">
+    <meta name="msapplication-TileImage" content="/touch-w8-mediumtile.png?ver=v9455"/>
+    <meta name="msapplication-square70x70logo" content="/touch-w8-smalltile.png?ver=v9455" />
+    <meta name="msapplication-square150x150logo" content="/touch-w8-mediumtile.png?ver=v9455" />
+    <meta name="msapplication-wide310x150logo" content="/touch-w8-widetile.png?ver=v9455" />
+    <meta name="msapplication-square310x310logo" content="/touch-w8-largetile.png?ver=v9455" />
 
     <title>Test for InfoTecs</title>
 
 </head>
 <body>
+  <button class="btn-hide" id="name">Name<span class="hidden-column" data-hidden="off"></span></button>
+  <button class="btn-hide" id="lastName">Last name<span class="hidden-column" data-hidden="off"></span></button>
+  <button class="btn-hide" id="about">About<span class="hidden-column" data-hidden="off"></span></button>
+  <button class="btn-hide" id="eyeColor">Eye color<span class="hidden-column" data-hidden="off"></span></button>
   <div class="container">
     <div class="container__inner">
     <table class="table">
       <thead>
         <tr>
-          <th>
-            <button class="topic first-name sort"> 
-              <span class="caption">Name </span><span class="triangle"></span></button>
+          <th class="caption name">
+            Name
              </th>
-          <th> 
-            <button class="topic last-name sort"> <span class="caption">Last name </span><span class="triangle"></span></button>
-          </th>
-          <th>
-            <button class="topic about sort"> <span class="caption">About </span> <span class="triangle"></span></button>
-           </th>
-          <th>
-            <button class="topic eye-color sort"><span class="caption">E.color </span> <span class="triangle"></span></button>
-           </th>
+             <th class="caption last_name">
+              Last name
+               </th>
+               <th class="caption about">
+                About
+                 </th>
+                 <th class="caption eye_color">
+                  Eye color
+                   </th>
         </tr>
       </thead>
       <tbody></tbody>
       <tfoot>
-        <tr>
-            <td class="table__btn">Свернуть</td>
-            <td class="table__btn">Свернуть</td>
-            <td class="table__btn">Свернуть</td>
-            <td class="table__btn">Свернуть</td>
-        </tr>
     </tfoot>
       </table>
       <div class="pagination"></div>
     </div>
-      <!-- <div class="container__inner">
-        <div class="sidebar"></div>
-        <div class="container__column">
+        <div class="container__inner">
           <div class="editor">
               <form class="editor__form hidden" autocomplete="off">
-                  <button class="editor__form_submit" type="submit">Сохранить</button>
+                <span class="close hidden"></span>
+                <button class="save__btn"">Save</button>
               </form>
           </div>
       </div>
-      </div> -->
   </div>
    <script src="js/data.js"></script>
    <script src="js/main.js"></script>
